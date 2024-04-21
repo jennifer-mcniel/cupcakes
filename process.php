@@ -19,18 +19,18 @@ $cost = $quantity * 3.5;
 
 echo "    
     <div style='border: 2px solid darkgrey'>
-        <h2>Thank you '$name', for your order</h2>
+        <h2>Thank you $name, for your order</h2>
         <div>
             <h3>Order Summary:</h3>
             <ul>
 ";
 
 for ($i = 0; $i < $quantity; $i++){
-    echo "<li>'$flavors[$i]'</li>";
+    echo "<li>$flavors[$i]</li>";
 }
 echo "
             </ul>
-            <div>Order Total: $'$cost'</div>
+            <div>Order Total: $$cost</div>
         </div></div></body></html>";
 
 

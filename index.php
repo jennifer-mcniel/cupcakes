@@ -1,3 +1,10 @@
+<!--
+Jennifer McNiel
+4/20/2024
+https://jmcniel.greenriverdev.com/328/cupcakes/
+Web page that takes a Cupcake order and displays a summary and cost
+on a confirmation page.
+-->
 <?php
     echo "
         <!doctype html>
@@ -11,7 +18,7 @@
         </head>
         <body>
             <h2>Cupcake Fundraiser</h2>
-            <form method='post' action='submit.php'>
+            <form method='post' action='process.php'>
                 <div>
                     <label for='name'>Your name:</label>
                     <input type='text' id='name' name='name'>
@@ -19,25 +26,25 @@
                 <div>
                     <label>Cupcake flavors:</label> <br>
                     
-                    <input type='checkbox' id='grass' name='flavor[]' value='grass'>
+                    <input type='checkbox' id='grass' name='flavor[]' value='The Grasshopper'>
                     <label for='grass'>The Grasshopper</label><br>
                     
-                    <input type='checkbox' id='whiskey' name='flavor[]' value='whiskey'>
+                    <input type='checkbox' id='whiskey' name='flavor[]' value='Whiskey Maple Bacon'>
                     <label for='whiskey'>Whiskey Maple Bacon</label><br>
                     
-                    <input type='checkbox' id='carrot' name='flavor[]' value='carrot'>
+                    <input type='checkbox' id='carrot' name='flavor[]' value='Carrot Walnut'>
                     <label for='carrot'>Carrot Walnut</label><br>
                     
-                    <input type='checkbox' id='salted' name='flavor[]' value='salted'>
+                    <input type='checkbox' id='salted' name='flavor[]' value='Salted Caramel'>
                     <label for='salted'>Salted Caramel</label><br>
                     
-                    <input type='checkbox' id='redvel' name='flavor[]' value='redvel'>
+                    <input type='checkbox' id='redvel' name='flavor[]' value='Red Velvet'>
                     <label for='redvel'>Red Velvet</label><br>
                     
-                    <input type='checkbox' id='lemon' name='flavor[]' value='lemon'>
+                    <input type='checkbox' id='lemon' name='flavor[]' value='Lemon Drop'>
                     <label for='lemon'>Lemon Drop</label><br>
                     
-                    <input type='checkbox' id='tiramisu' name='flavor[]' value='tiramisu'>
+                    <input type='checkbox' id='tiramisu' name='flavor[]' value='Tiramisu'>
                     <label for='tiramisu'>Tiramisu</label><br>
                 </div>
                 <button type='submit'>Submit</button>
